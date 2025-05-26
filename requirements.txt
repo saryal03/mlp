@@ -1,0 +1,7 @@
+torch
+torchvision
+transformers
+peft
+faiss-cpu       # or faiss-gpu
+omegaconf
+Pillow
