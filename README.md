@@ -63,6 +63,7 @@ MLProject/
 Edit `configs/cub.yaml` to point at your local CUB dataset and adjust hyperparameters:
 
 ```yaml
+download data from :: https://data.caltech.edu/records/65de6-vp158 (open-source)
 data:
   cub_root: "/path/to/CUB_200_2011"
   train_split: "splits/train.txt"
