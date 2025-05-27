@@ -10,3 +10,12 @@ eval:
 
 model:
   clip_model_name: "openai/clip-vit-base-patch16"
+  # (optional) local_clip_path: "/Users/sa/Documents/SCU/MLProject/CLIP/clip"
+
+train:
+  lr: 1e-4
+  epochs: 1
+
+index:
+  faiss_nlist: 100
+  top_k: [1, 5, 10]

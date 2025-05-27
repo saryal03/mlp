@@ -1,7 +1,8 @@
-torch
-torchvision
-transformers
-peft
-faiss-cpu       # or faiss-gpu
-omegaconf
-Pillow
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+peft>=0.3.0
+faiss-cpu>=1.7.2
+omegaconf>=2.3.0,<2.4.0
+Pillow>=9.5.0
+numpy==1.26.6
