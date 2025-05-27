@@ -1,8 +1,17 @@
-torch>=2.0.0
-torchvision>=0.15.0
+# Core DL & data libs
+torch>=2.0.0,<3.0.0
+torchvision>=0.15.0,<1.0.0
+numpy>=1.24.0
+
+# Hugging Face & PEFT
 transformers>=4.30.0
-peft>=0.3.0
+peft>=0.5.0
+omegaconf>=2.3.0
+
+# Indexing & search
 faiss-cpu>=1.7.2
-omegaconf>=2.3.0,<2.4.0
-Pillow>=9.5.0
-numpy==1.26.6
+
+# Image I/O & plotting
+Pillow>=9.0.0
+tqdm>=4.64.0
+matplotlib>=3.5.0

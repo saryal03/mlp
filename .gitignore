@@ -1,1 +1,51 @@
-data
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+  
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Data folders (raw or downloaded)
+data/
+# If you have a separate folder for processed data, ignore that too:
+# processed_data/
+
+# Model outputs, caches, logs
+outputs/
+cache/
+logs/
+
+# FAISS index and embeddings
+cache/gallery.index
+cache/gallery_embs.npy
+cache/image_paths.pkl
+
+# Any other large binary artifacts
+*.pt
+*.pth
+*.bin
+
+# Misc
+*.log
+*.tmp

@@ -1,8 +1,10 @@
+# configs/cub.yaml
+
 data:
   cub_root: "/Users/sa/Documents/SCU/MLProject/data/CUB_200_2011"
-  train_split: "splits/train.txt"
-  val_split:   "splits/val.txt"
-  test_split:  "splits/test.txt"
+  train_split: "/Users/sa/Documents/SCU/MLProject/data/CUB_200_2011/splits/train.txt"
+  val_split:   "/Users/sa/Documents/SCU/MLProject/data/CUB_200_2011/splits/val.txt"
+  test_split:  "/Users/sa/Documents/SCU/MLProject/data/CUB_200_2011/splits/test.txt"
 
 eval:
   batch_size: 64
@@ -10,11 +12,19 @@ eval:
 
 model:
   clip_model_name: "openai/clip-vit-base-patch16"
-  # (optional) local_clip_path: "/Users/sa/Documents/SCU/MLProject/CLIP/clip"
+  # local_clip_path: "/Users/sa/Documents/SCU/MLProject/src/CLIP/clip"  # if you have a local copy
 
 train:
   lr: 1e-4
   epochs: 1
+
+  # ── LoRA settings ───────────────────────────────────────────────────────
+  lora_r: 8
+  lora_alpha: 32
+  lora_dropout: 0.05
+
+  # where to save your fine-tuned weights
+  output_dir: "outputs/lora"
 
 index:
   faiss_nlist: 100

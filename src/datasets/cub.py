@@ -71,4 +71,8 @@ class CUBDataset(Dataset):
         else:
             pixel_values = default_transform(image, self.image_size)
 
-        return pixel_values, label
+        text = str(label)
+        return {
+            "images": pixel_values,
+            "texts": text
+        }
